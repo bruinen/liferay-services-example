@@ -1,0 +1,7 @@
+Bundle-SymbolicName: foos-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.service.foo.exception,\
+	com.liferay.service.foo.model,\
+	com.liferay.service.foo.service,\
+	com.liferay.service.foo.service.persistence

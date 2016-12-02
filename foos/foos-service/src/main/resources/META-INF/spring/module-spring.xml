@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.liferay.service.foo.service.impl.FooLocalServiceImpl" id="com.liferay.service.foo.service.FooLocalService" />
+	<bean class="com.liferay.service.foo.service.impl.FooServiceImpl" id="com.liferay.service.foo.service.FooService" />
+	<bean class="com.liferay.service.foo.service.persistence.impl.FooPersistenceImpl" id="com.liferay.service.foo.service.persistence.FooPersistence" parent="basePersistence" />
+	<bean class="com.liferay.service.foo.service.persistence.impl.FooFinderImpl" id="com.liferay.service.foo.service.persistence.FooFinder" parent="basePersistence" />
+</beans>
