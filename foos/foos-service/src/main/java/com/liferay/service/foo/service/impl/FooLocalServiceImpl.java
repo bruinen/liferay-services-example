@@ -39,4 +39,8 @@ public class FooLocalServiceImpl extends FooLocalServiceBaseImpl {
 	 *
 	 * Never reference this class directly. Always use {@link com.liferay.service.foo.service.FooLocalServiceUtil} to access the foo local service.
 	 */
+
+	public String findFooFinderInfo(){
+		return getFooFinder().findFooFinderInfo();
+	}
 }

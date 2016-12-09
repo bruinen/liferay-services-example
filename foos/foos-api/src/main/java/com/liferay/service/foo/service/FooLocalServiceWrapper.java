@@ -186,6 +186,11 @@ public class FooLocalServiceWrapper implements FooLocalService,
 		return _fooLocalService.getFoosCount();
 	}
 
+	@Override
+	public java.lang.String findFooFinderInfo() {
+		return _fooLocalService.findFooFinderInfo();
+	}
+
 	/**
 	* Returns the OSGi service identifier.
 	*

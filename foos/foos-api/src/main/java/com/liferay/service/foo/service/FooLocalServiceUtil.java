@@ -179,6 +179,10 @@ public class FooLocalServiceUtil {
 		return getService().getFoosCount();
 	}
 
+	public static java.lang.String findFooFinderInfo() {
+		return getService().findFooFinderInfo();
+	}
+
 	/**
 	* Returns the OSGi service identifier.
 	*

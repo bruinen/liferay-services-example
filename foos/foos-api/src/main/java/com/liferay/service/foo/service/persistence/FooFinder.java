@@ -22,5 +22,5 @@ import aQute.bnd.annotation.ProviderType;
  */
 @ProviderType
 public interface FooFinder {
-	public java.lang.String getFooFinderInfo();
+	public java.lang.String findFooFinderInfo();
 }

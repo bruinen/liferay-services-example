@@ -1,6 +1,6 @@
 package com.liferay.portlet.portlet;
 
-import com.liferay.service.foo.service.persistence.FooFinder;
+import com.liferay.service.foo.service.FooLocalService;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -27,11 +27,11 @@ public class FooPortlet extends GenericPortlet {
 
 		PrintWriter printWriter = renderResponse.getWriter();
 
-		printWriter.print("foos-portlet Portlet - Hello World!");
-		printWriter.print(fooFinder.getFooFinderInfo());
+		printWriter.print("foos-portlet Portlet - Hello World!<br/>");
+		printWriter.print(fooLocalService.findFooFinderInfo());
 	}
 
 
     @Reference
-    private volatile FooFinder fooFinder;
+    private volatile FooLocalService fooLocalService;
 }

@@ -175,6 +175,8 @@ public interface FooLocalService extends BaseLocalService,
 	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 	public int getFoosCount();
 
+	public java.lang.String findFooFinderInfo();
+
 	/**
 	* Returns the OSGi service identifier.
 	*

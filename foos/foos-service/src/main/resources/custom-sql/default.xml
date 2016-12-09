@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+    <sql id="com.liferay.service.foo.service.persistence.FooFinder.findTest">
+        SELECT concat('hello ',count(*)) from FOO_Foo
+    </sql>
+</custom-sql>
